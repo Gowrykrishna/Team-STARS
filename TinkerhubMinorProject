@@ -1,0 +1,73 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+
+  int a, b, choice, result;
+
+  cout << "Enter 1 for Addition:";
+  cout << "\nEnter 2 for Subtraction:";
+  cout << "\nEnter 3 for Multiplication: ";
+  cout << "\nEnter 4 for Division:" << endl;
+  cin >> choice;
+
+  switch (choice)
+
+    {
+
+    case 1:
+
+      {
+
+	cout << "Enter two numbers :";
+	cin >> a >> b;
+	result = a + b;
+	cout << "\nResult is :" << result;
+
+	break;
+
+      }
+
+    case 2:
+
+      {
+
+	cout << "Enter two numbers :";
+	cin >>a>>b;
+	result = a - b;
+	cout << "\nResult is :" << result;
+
+
+	break;
+      }
+
+    case 3:
+
+      {
+
+	cout << "Enter two numbers :";
+	cin >> a >> b;
+	result = a * b;
+	cout << "\nResult is :" << result;
+
+	break;
+      }
+
+    case 4:
+      {
+
+	cout << "Enter two numbers :";
+	cin >> a >> b;
+	cout << "\nResult is :" << result;
+	result = a / b;
+
+	break;
+
+      }
+    }
+
+
+  return 0;
+}
